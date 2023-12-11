@@ -10,7 +10,19 @@ b = int(input("b:"))
 c = int(input("c:"))
 print(smallest(a,b,c))"""
 #Cubing numbers from 1-10 using lambda function
-cubing = lambda a:f"{a}**3 = {a**3}"
+"""cubing = lambda a:f"{a}**3 = {a**3}"
 for i in range(1,11):
-    print(cubing(i))
-
+    print(cubing(i))"""
+#Filter function to convert
+"""n1=[1.35534,2.2342343,3.5431,4.2143,5.123123]
+output = filter(lambda a: round(a,2),n1)
+print(list(output))
+n1 = ["1", "2", "3", "4", "5"]
+integer = map(lambda a: int(a),n1 )
+print(list(integer))"""
+names = ["karan", "karvin", "poovin", "saran", "tharun", "saranya", "angela", "sanjith"]
+ending = filter(lambda a: a[-1]=='a',names)
+print(list(ending))
+names = ["karan", "karvin", "poovin", "saran", "tharun", "saranya", "angela", "sanjith"]
+take = map(lambda a: a[0].upper(),names)
+print(list(take))
